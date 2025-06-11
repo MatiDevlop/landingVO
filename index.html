@@ -39,7 +39,7 @@
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
             <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <!-- Sección Inicio -->
+            
 <div id="inicio" class="@container">
     <div class="@[480px]:p-4">
     <div
@@ -156,23 +156,43 @@
                 </div>
             </div>
             <h2 id="contacto" class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contáctanos</h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Correo electrónico</p>
-                <input
-                    placeholder="Tu correo electrónico"
-                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49709c] p-4 text-base font-normal leading-normal"
-                    value=""
-                />
-                </label>
-            </div>
-            <div class="flex px-4 py-3 justify-start">
-                <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c77f2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-                >
-                <span class="truncate">Enviar</span>
-                </button>
-            </div>
+<form id="form-contacto" class="flex flex-col gap-4 max-w-[480px] px-4 py-3">
+    <label class="flex flex-col min-w-40 flex-1">
+        <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Correo electrónico</p>
+        <input
+            name="email"
+            type="email"
+            required
+            placeholder="Tu correo electrónico"
+            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49709c] p-4 text-base font-normal leading-normal"
+        />
+    </label>
+    <label class="flex flex-col min-w-40 flex-1">
+        <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Motivo</p>
+        <select
+            name="motivo"
+            required
+            class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 p-4 text-base font-normal leading-normal"
+        >
+            <option value="">Selecciona un motivo</option>
+            <option value="consulta">Consulta</option>
+            <option value="suscripcion">Suscripción</option>
+            <option value="registro">Registro</option>
+        </select>
+    </label>
+    <button
+        type="submit"
+        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c77f2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+    >
+        <span class="truncate">Enviar</span>
+    </button>
+</form>
+
+
+<div id="datos-formulario" class="max-w-[480px] px-4 py-3 hidden bg-white rounded-lg shadow mt-4">
+    <h3 class="text-[#0d141c] text-base font-bold mb-2">Datos enviados:</h3>
+    <ul class="text-[#49709c] text-sm" id="datos-lista"></ul>
+</div>
             </div>
         </div>
         <footer class="flex justify-center">
@@ -213,5 +233,6 @@
         </footer>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
