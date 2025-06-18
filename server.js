@@ -3,10 +3,15 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import jwt from 'jsonwebtoken';
 import loadUsers from './loadUsers.js';
+import cors from 'cors';
 
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({
+  origin: 'http://localhost:5173',   // tu Vite
+  credentials: true                  // para que se envíen las cookies
+}));
 
 // Usa una variable de entorno en producción
 const JWT_SECRET = process.env.JWT_SECRET || 'cambia_este_secreto';

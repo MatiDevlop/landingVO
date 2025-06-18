@@ -1,207 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/landwind.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"/>
-    <title>AIChE</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/landwind.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+  />
+  <title>Club AIChE</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
-        <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
-            <div class="flex items-center gap-4 text-[#0d141c]">
-            <div class="size-4">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
-                </svg>
-            </div>
-            <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Club AIChE</h2>
-            </div>
-            <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-                <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#inicio">Inicio</a>
-                <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#sobre-nosotros">Sobre Nosotros</a>
-                <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#eventos">Eventos</a>
-                <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#recursos">Recursos</a>
-                <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#contacto">Contacto</a>
-            </div>
-            <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c77f2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-                <span class="truncate">Únete</span>
-            </button>
-            </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            
-<div id="inicio" class="@container">
-    <div class="@[480px]:p-4">
-    <div
-        class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-        style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbFznOiW05HAD2vg7U2OB0vK0Pi9vl6YUI8LDCpaUIjoM-4_5v7mvnoAAQpNuP2uFQUwdbzM2wul8An3vdz9iiiYbPZn3eF2t8YS5FmygF1wVVIkej5we_otqGLiVXEPTYDNOc5jm9SOsBGRn-vRQtCInTU-_J8h_HGEh_Mqoj52csaTcca8pnFjsLPiA1Ld1i8PLZS8VJeZmhQCm_0_Hh8QcAQz2yWRpdjsqQtLuPdJmbemUBj_mw4QLQZGNteTFFsEHllHtuOXD3");'
-    >
-        <div class="flex flex-col gap-2 text-center">
-            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-    Empoderando a los futuros ingenieros químicos
-</h1>
-<h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-    Únete al Club AIChE para conectar con compañeros, aprender de expertos y formar el futuro de la ingeniería química.
-</h2>
+<body class="relative flex min-h-screen flex-col bg-slate-50" style='font-family:"Public Sans","Noto Sans",sans-serif'>
+  <!-- HEADER -->
+  <header class="flex items-center justify-between border-b px-10 py-3 bg-white">
+    <div class="flex items-center gap-4">
+      <svg class="w-8 h-8 text-blue-600" viewBox="0 0 48 48" fill="currentColor">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"/>
+      </svg>
+      <h1 class="text-xl font-bold">Club AIChE</h1>
+    </div>
+    <nav class="flex gap-6">
+      <a href="#inicio" class="text-sm font-medium">Inicio</a>
+      <a href="#sobre-nosotros" class="text-sm font-medium">Sobre Nosotros</a>
+      <a href="#eventos" class="text-sm font-medium">Eventos</a>
+      <a href="#recursos" class="text-sm font-medium">Recursos</a>
+      <a href="#contacto" class="text-sm font-medium">Contacto</a>
+    </nav>
+    <button class="px-4 py-2 bg-blue-600 text-white rounded">Únete</button>
+  </header>
+
+  <main class="flex-1 px-8 py-6">
+    <!-- HERO -->
+    <section id="inicio" class="mb-12">
+      <div class="relative bg-cover bg-center h-80 rounded-lg" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbFznOiW05HAD2vg7U2OB0vK0Pi9vl6YUI8LDCpaUIjoM-4_5v7mvnoAAQpNuP2uFQUwdbzM2wul8An3vdz9iiiYbPZn3eF2t8YS5FmygF1wVVIkej5we_otqGLiVXEPTYDNOc5jm9SOsBGRn-vRQtCInTU-_J8h_HGEh_Mqoj52csaTcca8pnFjsLPiA1Ld1i8PLZS8VJeZmhQCm_0_Hh8QcAQz2yWRpdjsqQtLuPdJmbemUBj_mw4QLQZGNteTFFsEHllHtuOXD3");'>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-black/50 rounded-lg"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <h2 class="text-3xl font-black mb-2">Empoderando a los futuros ingenieros químicos</h2>
+          <p class="max-w-xl">Únete al Club AIChE para conectar con compañeros, aprender de expertos y formar el futuro de la ingeniería química.</p>
+          <button class="mt-4 px-6 py-2 bg-blue-500 rounded">Explorar</button>
         </div>
-        <button
-        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c77f2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-        >
-        <span class="truncate">Explorar</span>
-        </button>
-    </div>
-    </div>
-</div>
-            <h2 id="sobre-nosotros" class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Sobre Nosotros</h2>
-            <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
-    El Club AIChE está dedicado a fomentar una comunidad vibrante de estudiantes de ingeniería química. Nuestra misión es brindar oportunidades para el desarrollo profesional, la creación de redes y el enriquecimiento académico. Nos esforzamos por conectar a los estudiantes con profesionales de la industria, ofrecer recursos para el éxito académico y crear un ambiente de apoyo para el crecimiento personal y profesional.
-</p>
-            <div class="flex w-full grow bg-slate-50 @container p-4">
-                <div class="w-full gap-1 overflow-hidden bg-slate-50 @[480px]:gap-2 aspect-[3/2] rounded-lg grid grid-cols-[2fr_1fr_1fr]">
-                <div
-                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-6QNFXtZ16zKd6621qwRRLkgFNG-A4PT10VMrvzj70FAvwDok3p8xmNBnwF8C6K2DknsKnTULOeWHoOeknaqTiNnqAeuEEDD4q500qvaFYUquUajX_bFdHb3wTeX9gSJ69m_FMobewf1TrpL7e3x8B9mz0Tjv6KIiL03ShpaDXXmCVuxV0jjBa3e-M8bkfxc6GGeokug-YZC5xMbg4vt6mWKNKPnTRkypAwZHLBNhz4aaYwdNLgVWz8x6nbK6cNzZl-ROEKtZ4Hg7");'
-                ></div>
-                <div
-                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2 row-span-2"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDneSfDSZsw5Tx1P_kIhzADKunhojRa1Z3YuMB3jKwE5EplgnKBKEC6MqVEm5Xba96u-xteTXn6uxO6NNwMlce7cUtty0QkWo4H-nQYXtsfgyHsxCl6_adNh9wtAuJELXicrNwdZPY1pWUprhNqvKjf-ND-vved0ZvodYu20l8-6hYS7kZPwWUUjaQ8SWYEiSfPoFW2L1hk_NY5jD5fyjnhLSFOFmXwWei1-L93Vr14Hf3ot_zlzHYL9jB6eoE7JGEPOoKPeVoJbBf-");'
-                ></div>
-                </div>
-            </div>
-            <h2 id="eventos" class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Próximos Eventos</h2>
-                <div id="events-container" class="grid md:grid-cols-3 gap-4 p-4">
-                </div>
-            <h2 id="recursos" class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recursos</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#cedae8] bg-slate-50 p-4 flex-col">
-                <div class="text-[#0d141c]" data-icon="BookOpen" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                        d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
-                    ></path>
-                    </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">Materiales de Estudio</h2>
-                    <p class="text-[#49709c] text-sm font-normal leading-normal">Accede a una biblioteca completa de materiales de estudio para diversas asignaturas de ingeniería química.</p>
-                </div>
-                </div>
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#cedae8] bg-slate-50 p-4 flex-col">
-                <div class="text-[#0d141c]" data-icon="Briefcase" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                        d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
-                    ></path>
-                    </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">Guías de Carrera</h2>
-                    <p class="text-[#49709c] text-sm font-normal leading-normal">Obtén consejos de expertos sobre trayectorias profesionales, redacción de currículum y preparación para entrevistas.</p>
-                </div>
-                </div>
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#cedae8] bg-slate-50 p-4 flex-col">
-                <div class="text-[#0d141c]" data-icon="Link" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                        d="M137.54,186.36a8,8,0,0,1,0,11.31l-9.94,10A56,56,0,0,1,48.38,128.4L72.5,104.28A56,56,0,0,1,149.31,102a8,8,0,1,1-10.64,12,40,40,0,0,0-54.85,1.63L59.7,139.72a40,40,0,0,0,56.58,56.58l9.94-9.94A8,8,0,0,1,137.54,186.36Zm70.08-138a56.08,56.08,0,0,0-79.22,0l-9.94,9.95a8,8,0,0,0,11.32,11.31l9.94-9.94a40,40,0,0,1,56.58,56.58L172.18,140.4A40,40,0,0,1,117.33,142,8,8,0,1,0,106.69,154a56,56,0,0,0,76.81-2.26l24.12-24.12A56.08,56.08,0,0,0,207.62,48.38Z"
-                    ></path>
-                    </svg>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0d141c] text-base font-bold leading-tight">Enlaces Externos</h2>
-                    <p class="text-[#49709c] text-sm font-normal leading-normal">Explora enlaces a organizaciones relevantes, revistas y recursos de la industria.</p>
-                </div>
-                </div>
-            </div>
-            <h2 id="contacto" class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contáctanos</h2>
-<form id="form-contacto" class="flex flex-col gap-4 max-w-[480px] px-4 py-3">
-    <label class="flex flex-col min-w-40 flex-1">
-        <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Correo electrónico</p>
-        <input
-            name="email"
-            type="email"
-            required
-            placeholder="Tu correo electrónico"
-            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49709c] p-4 text-base font-normal leading-normal"
-        />
-    </label>
-    <label class="flex flex-col min-w-40 flex-1">
-        <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Motivo</p>
-        <select
-            name="motivo"
-            required
-            class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 p-4 text-base font-normal leading-normal"
-        >
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Sobre Nosotros</h2>
+      <p>El Club AIChE está dedicado a fomentar una comunidad vibrante de estudiantes de ingeniería química. Nuestra misión es brindar oportunidades para el desarrollo profesional, la creación de redes y el enriquecimiento académico.</p>
+    </section>
+
+    <!-- EVENTOS -->
+    <section id="eventos" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Próximos Eventos</h2>
+
+      <!-- 1) Formulario de creación (solo admins) -->
+      <div id="admin-create-event" class="mb-8 hidden">
+        <h3 class="text-xl font-semibold mb-2">Crear nuevo evento</h3>
+        <form id="form-create-event" class="flex flex-col gap-2 max-w-md">
+          <input name="nombre" type="text" placeholder="Nombre del evento" class="p-2 border rounded" required/>
+          <textarea name="descripcion" placeholder="Descripción" class="p-2 border rounded" rows="2"></textarea>
+          <input name="horarios" type="text" placeholder="Horarios (ej: 08:00,09:00)" class="p-2 border rounded" required/>
+          <input name="roles" type="text" placeholder="Roles (ej: Host,Speaker)" class="p-2 border rounded" required/>
+          <button type="submit" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded">Crear Evento</button>
+        </form>
+      </div>
+
+      <!-- 2) Tarjetas informativas -->
+      <div id="events-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <!-- se llenan con JS -->
+      </div>
+
+      <!-- 3) UI de Reserva de Turnos -->
+      <div id="events-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- se llenará dinámicamente con selects, botones y slots -->
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Recursos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 border rounded">
+          <h3 class="font-semibold">Materiales de Estudio</h3>
+          <p>Accede a una biblioteca completa de materiales de estudio.</p>
+        </div>
+        <div class="p-4 border rounded">
+          <h3 class="font-semibold">Guías de Carrera</h3>
+          <p>Consejos de expertos sobre trayectorias profesionales.</p>
+        </div>
+        <div class="p-4 border rounded">
+          <h3 class="font-semibold">Enlaces Externos</h3>
+          <p>Recursos de la industria y organizaciones relevantes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+      <form id="form-contacto" class="flex flex-col gap-4 max-w-md">
+        <label class="flex flex-col">
+          <span>Correo electrónico</span>
+          <input name="email" type="email" required placeholder="Tu correo electrónico" class="p-2 border rounded"/>
+        </label>
+        <label class="flex flex-col">
+          <span>Motivo</span>
+          <select name="motivo" required class="p-2 border rounded">
             <option value="">Selecciona un motivo</option>
             <option value="consulta">Consulta</option>
             <option value="suscripcion">Suscripción</option>
             <option value="registro">Registro</option>
-        </select>
-    </label>
-    <button
-        type="submit"
-        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c77f2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-    >
-        <span class="truncate">Enviar</span>
-    </button>
-</form>
+          </select>
+        </label>
+        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded">Enviar</button>
+      </form>
+      <div id="datos-formulario" class="hidden max-w-md mt-4 p-4 bg-white rounded shadow">
+        <h4 class="font-semibold mb-2">Datos enviados:</h4>
+        <ul id="datos-lista" class="list-disc list-inside text-sm text-gray-700"></ul>
+      </div>
+    </section>
+  </main>
 
+  <!-- FOOTER -->
+  <footer class="bg-white py-6">
+    <div class="text-center text-sm text-gray-600">© 2024 Club AIChE. Todos los derechos reservados.</div>
+  </footer>
 
-<div id="datos-formulario" class="max-w-[480px] px-4 py-3 hidden bg-white rounded-lg shadow mt-4">
-    <h3 class="text-[#0d141c] text-base font-bold mb-2">Datos enviados:</h3>
-    <ul class="text-[#49709c] text-sm" id="datos-lista"></ul>
-</div>
-            </div>
-        </div>
-        <footer class="flex justify-center">
-            <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-                <div class="flex flex-wrap justify-center gap-4">
-                <a href="#">
-                    <div class="text-[#49709c]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                        ></path>
-                    </svg>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="text-[#49709c]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                        ></path>
-                    </svg>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="text-[#49709c]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                        ></path>
-                    </svg>
-                    </div>
-                </a>
-                </div>
-                <p class="text-[#49709c] text-base font-normal leading-normal">© 2024 Club AIChE. Todos los derechos reservados.</p>
-            </footer>
-            </div>
-        </footer>
-        </div>
-    </div>
-    <script type="module" src="script.js"></script>   
+  <!-- SCRIPTS -->
+  <script type="module" src="/script.js"></script>
 </body>
 </html>
