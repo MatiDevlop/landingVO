@@ -31,7 +31,8 @@
       <a href="#recursos" class="text-sm font-medium">Recursos</a>
       <a href="#contacto" class="text-sm font-medium">Contacto</a>
     </nav>
-    <button class="px-4 py-2 bg-blue-600 text-white rounded">Únete</button>
+    <button onclick="mostrarPopup()" class="px-4 py-2 bg-blue-600 text-white rounded">Ingresar a sesión</button>
+
   </header>
 
   <main class="flex-1 px-8 py-6">
@@ -132,5 +133,13 @@
 
   <!-- SCRIPTS -->
   <script type="module" src="/script.js"></script>
+  <!-- Popup de inicio de sesión -->
+  <div id="popup-login" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white p-6 rounded shadow-md w-full max-w-sm text-center">
+      <h2 class="text-xl font-semibold mb-4">Ingresa tu número de matrícula</h2>
+      <input id="matriculaInput" type="text" placeholder="Ej. 123456" class="border p-2 w-full rounded mb-4">
+      <button onclick="enviarMatricula()" class="bg-blue-600 text-white px-4 py-2 rounded">Ingresar</button>
+    </div>
+  </div>
 </body>
 </html>

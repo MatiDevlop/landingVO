@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: club-aiche-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: JWT_SECRET
+        value: cambia_este_secreto

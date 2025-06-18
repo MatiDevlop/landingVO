@@ -204,3 +204,42 @@ function renderReservationUI(events) {
     });
   });
 }
+
+function mostrarPopup() {
+  document.getElementById('popup-login').classList.remove('hidden');
+}
+
+async function enviarMatricula() {
+  const matricula = document.getElementById('matriculaInput').value.trim();
+  if (!matricula) {
+    alert("Por favor, ingresa tu número de matrícula.");
+    return;
+  }
+
+  try {
+    const response = await fetch('http://localhost:3000/login', {
+      method: 'POST',
+      credentials: 'include', // Importante para enviar/recibir cookies
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ matricula })
+    });
+
+    const data = await response.json();
+    if (response.ok) {
+      alert("Inicio de sesión exitoso.");
+      location.reload(); // o redirigir a otra vista si deseas
+    } else {
+      alert(data.error || "Error al iniciar sesión.");
+    }
+  } catch (error) {
+    alert("No se pudo conectar con el servidor.");
+    console.error(error);
+  }
+
+  document.getElementById('popup-login').classList.add('hidden');
+}
+
+window.mostrarPopup = mostrarPopup;
+window.enviarMatricula = enviarMatricula;
